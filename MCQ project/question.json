@@ -1,0 +1,38 @@
+[
+    {
+        "question" : "How many times Al-Ahly win Caf Champions League? ",
+        "Answer1":"12 times",
+        "Answer2":"10 times",
+        "Answer3":"13 times",
+        "Answer4":"14 times",
+        "rightAnswer":"10 times"
+    },
+    {
+        "question" : "How many times Real Madrid win Uefa Champions League? ",
+        "Answer1":"18 times",
+        "Answer2":"15 times",
+        "Answer3":"17 times",
+        "Answer4":"14 times",
+        "rightAnswer":"14 times"
+    },
+    {
+        "question" : "How many times Zamalek win Caf Champions League? ",
+        "Answer1":"6 times",
+        "Answer2":"11 times",
+        "Answer3":"10 times",
+        "Answer4":"14 times",
+        "rightAnswer":"6 times"
+    },
+    {
+        "question" : "How many times enppi win Caf Champions League? ",
+        "Answer1":"6 times",
+        "Answer2":"11 times",
+        "Answer3":"10 times",
+        "Answer4":"15 times",
+        "rightAnswer":"15 times"
+    }
+
+    
+]  
+
+    

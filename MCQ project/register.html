@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>MCQ Examinition</title>
+  </head>
+  <body>
+    <div class="form">
+      <form action="login.html" onsubmit="return validate()">
+        <h1 data-text="REGISTER">REGISTER</h1>
+        <br />
+        <label for="fname">First Name</label>
+        <input
+          type="text"
+          name="firstname"
+          placeholder="Alphabetical characters plz"
+          id="fname"
+        />
+        <p id="feedback">Empty or not Alphabetical</p>
+        <label for="lname">Last Name</label>
+        <input
+          type="text"
+          name="lname"
+          placeholder="Alphabetical characters plz"
+          id="lname"
+        />
+        <p id="feedback2">should be Alphabetical</p>
+
+        <label for="email">E-Mail </label>
+        <input
+          type="email"
+          placeholder="example@gmail.com"
+          name="email"
+          id="email"
+        />
+        <p id="feedbackMail">should contain @ and .com</p>
+
+        <label for="pass">Password</label>
+        <input
+          type="password"
+          name="password"
+          placeholder="**********"
+          id="pass"
+        />
+        <p id="feedbackpass">should be more than 8</p>
+
+        <label for="repass"> Re-Password</label>
+        <input
+          type="password"
+          name="repassword"
+          placeholder="**********"
+          id="repass"
+        />
+        <p id="feedbackpass1">should be more than 8 and the same pass</p>
+
+        <input type="submit" class="submit" value="Submit" />
+      </form>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="homeStyle.css" />
+    <meta name="description" content="quiz app " />
+
+    <link
+      rel="shortcut icon"
+      href="icons8-question-mark-48.png"
+      type="image/x-icon"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Mcq Examinition</title>
+  </head>
+  <body>
+    <div class="range" id="range">
+      <div class="slider" id="slider"></div>
+    </div>
+
+    <div class="bg" id="slideForm">
+      <div class="leftSide">
+        <!-- <form> -->
+        <div class="question">
+          <!-- <p>1 - How Many AlAhly win caf Champions League ?</p> -->
+        </div>
+
+        <div class="radio">
+          <!-- <div class="box">
+              <input type="radio" value="10" name="q1" id="a" />
+              <label for="a">10 times</label>
+            </div> -->
+
+          <!-- <div class="box">
+              <input type="radio" value="14" name="q1" id="b" checked />
+              <label for="b">14 times</label>
+            </div> -->
+
+          <!-- <div class="box">
+              <input type="radio" value="12" name="q1" id="c" />
+              <label for="c">12 times</label>
+            </div> -->
+
+          <!-- <div class="box">
+              <input type="radio" value="11" name="q1" id="d" />
+              <label for="d">11 times</label>
+            </div> -->
+        </div>
+        <!-- </form> -->
+        <div class="bt">
+          <button class="prev">Previous</button>
+          <span id="page"></span>
+          <button class="next">Next</button>
+          <button class="mark">
+            <i style="font-size: 25px" class="fa-solid fa-flag"></i>
+          </button>
+        </div>
+
+        <div class="submitDiv">
+          <button class="submit">Submit</button>
+        </div>
+      </div>
+      <div class="rightSide">
+        <i id="icon" class="fa-solid fa-flag"></i>
+        <!-- <button class="marked">mark</button> -->
+        <div class="markedDiv">
+          <p class="para">Marked Question</p>
+        </div>
+      </div>
+    </div>
+    <div class="theResult"></div>
+  </body>
+  <script src="home.js"></script>
+</html>

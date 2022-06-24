@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,700&display=swap");
+* {
+  font-family: "Lato", sans-serif;
+}
+body {
+  background: #0f0c29; /* fallback for old browsers */
+  background: -webkit-linear-gradient(
+    to left,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(
+    to left,
+    #24243e,
+    #302b63,
+    #0f0c29
+  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  font-family: "Lato", sans-serif;
+}
+.form {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 550px;
+  height: 700px;
+  background-color: #3a3476;
+  box-shadow: 0px 0px 12px -1px #403c86;
+  border-radius: 5px;
+}
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #eeee;
+}
+input {
+  background-color: eeee;
+  margin: 5px;
+  padding: 8px;
+  width: 300px;
+  border: none;
+  border-radius: 5px;
+  background-color: transparent;
+  border-bottom: 1px solid #eeee;
+  color: #eeee;
+  transition: 0.5s;
+}
+input:hover {
+  background-color: #0f0c29;
+  border: 1px solid #eeee;
+}
+.form label {
+  width: 300px;
+  display: flex;
+  align-items: flex-start;
+  color: #eeee;
+  font-weight: bold;
+  font-size: 18px;
+}
+.submit {
+  background-color: transparent;
+  border: 1px white solid;
+  padding: 10px;
+  width: 150px;
+  color: #eeee;
+  transition: 0.5s;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.submit:hover {
+  background-color: #eeee;
+  color: #403c86;
+}
+h1 {
+  position: relative;
+  font-weight: bold;
+  color: transparent;
+  -webkit-text-stroke: 1px #eeee;
+  overflow: hidden;
+  letter-spacing: 3px;
+}
+h1::before {
+  content: attr(data-text);
+  width: 0;
+  height: 100%;
+  color: #eeee;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  animation: text 5s linear infinite;
+}
+@keyframes text {
+  0%,
+  10%,
+  100% {
+    width: 0;
+  }
+  50%,
+  80% {
+    width: 100%;
+  }
+}
+
+p {
+  font-size: 12px;
+  width: 300px;
+  display: flex;
+  align-content: flex-start;
+  position: relative;
+  top: -8px;
+  visibility: hidden;
+}
+.feedback {
+  font-size: 12px;
+  width: 300px;
+  display: flex;
+  align-content: flex-start;
+  position: relative;
+  top: -8px;
+  /* visibility: hidden; */
+}

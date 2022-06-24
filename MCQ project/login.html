@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LOGIN</title>
+    <link rel="stylesheet" href="login.css" />
+  </head>
+  <body>
+    <div class="container">
+      <img class="img" src="Choose-rafiki.png" alt="" />
+      <div class="box">
+        <form class="login" action="Mcq Exam.html" onsubmit="return validate()">
+          <h1 data-text="LOGIN...">LOGIN...</h1>
+          <label for="email">E-Mail </label>
+          <input
+            type="email"
+            placeholder="example@gmail.com"
+            name="email"
+            id="email"
+          />
+          <p id="feedbackMail">Wrong Email</p>
+
+          <label for="pass">Password</label>
+          <input
+            type="password"
+            name="password"
+            placeholder="**********"
+            id="pass"
+          />
+          <p id="feedbackpass">Wrong Password</p>
+
+          <input type="submit" class="submit" value="LOGIN" />
+        </form>
+      </div>
+    </div>
+    <script>
+      let mail = document.getElementById("email");
+      feedbackMail = document.getElementById("feedbackMail");
+      var mailData = localStorage.getItem("mail", mail.value);
+      //console.log(mailData);
+      function validate() {
+        if (mail.value != mailData) {
+          feedbackMail.style.visibility = "visible";
+
+          return false;
+        }
+        let pass = document.getElementById("pass");
+        feedbackpass = document.getElementById("feedbackpass");
+        var psw = localStorage.getItem("pass", pass.value);
+        //console.log(psw);
+        if (pass.value != psw) {
+          feedbackpass.style.visibility = "visible";
+
+          return false;
+        }
+      }
+      function preventBack() {
+        window.history.forward();
+      }
+
+      setTimeout("preventBack()", 0);
+
+      window.onunload = function () {
+        null;
+      };
+
+      // let mail = document.getElementById("email");
+      // feedbackMail = document.getElementById("feedbackMail");
+      // var pattern =
+      //   /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/;
+
+      // console.log(mail);
+      // let pass = document.getElementById("pass");
+      // console.log(pass);
+      // let feedbackpass = document.getElementById("feedbackpass");
+      // function validate() {
+      //   if (pass.value.length < 8) {
+      //     feedbackpass.style.visibility = "visible";
+      //     return false;
+      //   }
+      //   if (mail.value.match(pattern)) {
+      //     // alert("hiii");
+      //     return true;
+      //   } else {
+      //     feedbackMail.style.visibility = "visible";
+      //     return false;
+      //   }
+      // }
+    </script>
+  </body>
+</html>
